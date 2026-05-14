@@ -44,7 +44,7 @@
   "inbounds": [
     {
       "tag": "mixed-in",
-      "port": 10808,
+      "port": 8083,
       "protocol": "mixed",
       "sniffing": {
         "enabled": true,
@@ -58,7 +58,7 @@
       }
     },
 	{
-      "port": 11666,
+      "port": 11667,
       "tag": "tls-decrypt-h11",
       "protocol": "tunnel",
       "settings": {
@@ -81,7 +81,7 @@
       }
     },
     {
-      "port": 11777,
+      "port": 11778,
       "tag": "tls-decrypt-h211",
       "protocol": "tunnel",
       "settings": {
@@ -110,14 +110,14 @@
       "tag": "redirect-out-h11",
       "protocol": "direct",
       "settings": {
-        "redirect": "127.0.0.1:11666"
+        "redirect": "127.0.0.1:11667"
       }
     },
     {
       "tag": "redirect-out-h211",
       "protocol": "direct",
       "settings": {
-        "redirect": "127.0.0.1:11777"
+        "redirect": "127.0.0.1:11778"
       }
     },
     {
